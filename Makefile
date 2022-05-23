@@ -8,6 +8,6 @@ compile:
 debug:
 	mpic++ ${warnings} ${threads} ${wildcard *.cpp} -o ${outputName} ${debug}
 run:
-	mpirun -n ${size} ./skyers ${filename}
+	mpirun -n ${size} ./skyers ${weights}
 clean:
 	rm ${outputName}
