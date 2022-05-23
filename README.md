@@ -1,0 +1,3 @@
+# PROG-ROZPROSZONE - PROJEKT ZALICZENIOWY
+## Wyciąg narciarski:
+Wyciąg narciarski o całkowitej nośności N kg wwozi na szczyt pojedynczych narciarzy. Każdy z S narciarzy waży łącznie ze sprzętem ni kg (ni < N lecz suma(ni) > N). W każdym momencie suma wag ni aktualnie zabranych narciarzy nie może przekroczyć N. Po dotarciu na szczyt narciarze przez pewien czas zjeżdżają na nartach, a następnie ponownie ubiegają się o wwiezienie na szczyt. Napisać program dla procesu narciarza, umożliwiający każdemu narciarzowi wielokrotne korzystanie z wyciągu. 
