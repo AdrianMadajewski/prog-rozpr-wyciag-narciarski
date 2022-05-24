@@ -10,6 +10,11 @@
 #include <iomanip>
 #include <thread>
 
+extern int MAX_SKYERS;
+extern int MAX_SKI_LIFT;
+extern int MAX_SLEEP_TIME;
+extern int MIN_SLEEP_TIME;
+
 enum MPITag
 {
     REQUEST = 0,

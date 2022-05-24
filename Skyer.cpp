@@ -1,7 +1,11 @@
 #include "Skyer.h"
-#include "Utility.h"
 
 #include <algorithm>
+
+int MAX_SKYERS;
+int MAX_SKI_LIFT;
+int MAX_SLEEP_TIME;
+int MIN_SLEEP_TIME;
 
 // Set threads
 Skyer::Skyer()

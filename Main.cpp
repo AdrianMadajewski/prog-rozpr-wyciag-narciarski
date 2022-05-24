@@ -1,18 +1,12 @@
 #include <iostream>
 #include <mpi.h>
 
-#include "Utility.h"
 #include "Skyer.h"
 #include "File.h"
 
 // mpic++ Main.cpp Skyer.cpp Utility.cpp -o skyers -pthread -D DEBUG -Wall -Wextra -std=c++17
 // mpirun -np 4 --hostfile mpi_hosts --map-by node skyers weights.txt
 // mpirun -np 4 skyers weights.txt
-
-int MAX_SKYERS;
-int MAX_SKI_LIFT;
-int MAX_SLEEP_TIME;
-int MIN_SLEEP_TIME;
 
 int main(int argc, char **argv)
 {
