@@ -35,8 +35,6 @@ int main(int argc, char **argv)
     // Shared
     Skyer skyer;
     skyer.m_data.clock = 0;
-    skyer.m_data.weight = skiersWeights.at(skyer.m_data.ID);
-
     srand(time(nullptr) + skyer.m_data.ID);
 
     // MPI initialize
@@ -46,6 +44,8 @@ int main(int argc, char **argv)
 
     // Initialize process own rank
     MPI_Comm_rank(MPI_COMM_WORLD, &skyer.m_data.ID);
+
+    skyer.m_data.weight = skiersWeights.at(skyer.m_data.ID);
 
     skyer.mainActivity();
 
