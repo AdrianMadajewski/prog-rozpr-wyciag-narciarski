@@ -34,8 +34,10 @@ private:
     std::mutex clockMutex;
     std::mutex releaseMutex;
 
-    // Functionality
+    // Resource queue
     std::vector<Data> queue;
+
+    // Functionality
     void sortQueue();
     void addQueue(const Data &data);
     void deleteQueue(int id);

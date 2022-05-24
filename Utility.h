@@ -11,7 +11,7 @@ extern int MIN_SLEEP_TIME;
 enum MPITag
 {
     REQUEST = 0,
-    CONFIRM, 
+    REPLY, 
     RELEASE,
 };
 

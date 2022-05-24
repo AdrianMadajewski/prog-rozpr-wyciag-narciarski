@@ -40,7 +40,7 @@ Skyer::Skyer()
                 addQueue(recv_data);
 
                 // Send back confirmation message
-                MPI_Send(&success, 1, MPI_INT, recv_data.ID, CONFIRM, MPI_COMM_WORLD);
+                MPI_Send(&success, 1, MPI_INT, recv_data.ID, REPLY, MPI_COMM_WORLD);
             } 
     });
 }
@@ -199,7 +199,7 @@ void Skyer::waitForConfirm()
     {
         if (process_rank != m_data.ID)
         {
-            MPI_Recv(&success, 1, MPI_INT, process_rank, CONFIRM, MPI_COMM_WORLD, &status);
+            MPI_Recv(&success, 1, MPI_INT, process_rank, REPLY, MPI_COMM_WORLD, &status);
         }
     }
 }
