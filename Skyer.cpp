@@ -61,7 +61,13 @@ void Skyer::sortQueue()
     #ifdef DEBUG
         std::cout << m_data.ID << ": sortQueue()" <<  std::endl;
     #endif 
-    std::sort(queue.begin(), queue.end(), compareClocks);
+    std::sort(queue.begin(), queue.end(), [](const Data &s1, const Data &s2)
+    {
+         if(s1.clock < s2.clock)
+            return true;
+
+        return (s1.clock == s2.clock && s1.ID < s2.ID);
+    });
 }
 
 void Skyer::addQueue(const Data &data)

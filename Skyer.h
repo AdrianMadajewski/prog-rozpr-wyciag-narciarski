@@ -10,6 +10,13 @@
 #include <iomanip>
 #include <thread>
 
+enum MPITag
+{
+    REQUEST = 0,
+    REPLY, 
+    RELEASE,
+};
+
 struct Data
 {
     int ID;

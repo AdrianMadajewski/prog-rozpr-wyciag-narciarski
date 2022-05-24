@@ -9,6 +9,11 @@
 // mpirun -np 4 --hostfile mpi_hosts --map-by node skyers weights.txt
 // mpirun -np 4 skyers weights.txt
 
+int MAX_SKYERS;
+int MAX_SKI_LIFT;
+int MAX_SLEEP_TIME;
+int MIN_SLEEP_TIME;
+
 int main(int argc, char **argv)
 {
     // Read from file
