@@ -1,4 +1,4 @@
-# Collage Parallel Programing Assignment
+# Distributed Systems Programing Assignment
 ## Polish
 Wyciąg narciarski o całkowitej nośności **N** kg wwozi na szczyt pojedynczych narciarzy. Każdy z **S** narciarzy waży łącznie ze sprzętem **n** kg (**n** < **N** lecz suma(**n**) > **N**). W każdym momencie suma wag **n** aktualnie zabranych narciarzy nie może przekroczyć **N**. Po dotarciu na szczyt narciarze przez pewien czas zjeżdżają na nartach, a następnie ponownie ubiegają się o wwiezienie na szczyt. Napisać program dla procesu narciarza, umożliwiający każdemu narciarzowi wielokrotne korzystanie z wyciągu. 
 
